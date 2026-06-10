@@ -1,0 +1,6 @@
+.img-producto {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* llena el cuadro manteniendo proporción y sin desbordar */
+  display: block;
+}
