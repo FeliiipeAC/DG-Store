@@ -1,8 +1,8 @@
-import Imagescomponent from '../ImageComponent'
+import ImageComponent from '../ImageComponent'
 import ButtonComponent from '../ButtonComponent'
 import './CardComponent.css'
 
-function CardComponent(valor) {
+function formatearCLP(valor) {
     return valor.toLocaleString('es-CL', {
         style: 'currency',
         currency: 'CLP',
@@ -18,7 +18,7 @@ function CardComponent({ product, onAdd }) {
             <span className="card__category">{category}</span>
             
             <div className="card__image">
-                <ImagesComponent src={image} alt={name} />
+                <ImageComponent src={image} alt={name} />
             </div>
 
             <div className="card__body">

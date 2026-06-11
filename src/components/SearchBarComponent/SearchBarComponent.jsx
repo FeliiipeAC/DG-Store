@@ -1,6 +1,6 @@
 import './SearchBarComponent.css'
 
-function searchBarComponent({
+function SearchBarComponent({
     value,
     onChange,
     placeholder = 'Busca productos, marcas y mas...',
@@ -22,4 +22,4 @@ function searchBarComponent({
     )
 }
 
-export default searchBarComponent
+export default SearchBarComponent
