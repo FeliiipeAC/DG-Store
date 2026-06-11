@@ -4,7 +4,7 @@ import './ProductListComponent.css'
 function ProductListComponent({ products, onAdd}) {
     if (!products || products.length ===0) {
         return (
-            <p clasName="product-list__empty">
+            <p className="product-list__empty">
                 No se encontraron productos para tu busqueda. 🔍
             </p>
         )
@@ -13,7 +13,7 @@ function ProductListComponent({ products, onAdd}) {
     return (
         <section className="product-list">
             {products.map ((producto) => (
-                <CardComponent key={producto.id} product={producto} on Add={onAdd} />
+                <CardComponent key={producto.id} product={producto} onAdd={onAdd} />
             ))}
         </section>
     )
