@@ -1,0 +1,26 @@
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem 1rem;
+  color: var(--dg-azul);
+}
+
+.loader__spinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid var(--dg-gris-borde);
+  border-top-color: var(--dg-naranjo);
+  border-radius: 50%;
+  animation: girar 0.8s linear infinite;
+}
+
+@keyframes girar {
+  to { transform: rotate(360deg); }
+}
+
+.loader__texto {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
