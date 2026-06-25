@@ -4,20 +4,20 @@ import './HeroComponent.css'
 
 const SLIDES =[
    {
-    titulo: 'Cyber DG Store',
-    subtitulo: 'Hasta 40% de descuento en notebooks seleccionados',
-    cta: 'Ver ofertas',
+    titulo: 'Bienvenido a DG Store',
+    subtitulo: 'Descubre productos de todo el mundo en un solo lugar',
+    cta: 'Ver catalogo',
     clase: 'hero__slide--1',
    },
    {
-    titulo: 'Arma tu PC gamer',
-    subtitulo: 'Procesadores, tarjetjas de video y componentes al mejor precio',
+    titulo: 'Ofertas en toda la tienda',
+    subtitulo: 'Belleza, perfumes, hogar y mucho mas al mejor precio',
     cta: 'Explorar productos',
     clase: 'hero__slide--2',
    },
    {
-    titulo: 'Envio gratis 🚚',
-    subtitulo: 'En compras sobre $99.990 a todo Chile',
+    titulo: 'Envio a todo el mundo 🚚',
+    subtitulo: 'Compra facil y recibe donde estes',
     cta: 'Comprar ahora',
     clase: 'hero__slide--3',
    }
