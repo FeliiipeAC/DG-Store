@@ -46,17 +46,17 @@ function App() {
         <SearchBarComponent value={busqueda} onChange={setBusqueda} />
       </HeaderComponent>
 
-      <main>
+      <main className="contenido">
         <HeroComponent onCta={irAlCatalogo} />
 
         <div className="contenido__head" id="catalogo">
           <h1>Catalogo de productos</h1>
-          (!loading && !error && (
+          {!loading && !error && (
             <span className="contenido__count">
               {productosFiltrados.length} producto
               {productosFiltrados.length !== 1 ? 's' : ''}              
             </span>
-          ))
+          )}
         </div>
 
         {loading && <LoaderComponent />}
