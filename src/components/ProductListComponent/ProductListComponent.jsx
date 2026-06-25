@@ -1,19 +1,15 @@
-import CardComponent from '../CardComponent'
+import ProductCardComponent from '../ProductCardComponent'
 import './ProductListComponent.css'
 
-function ProductListComponent({ products, onAdd}) {
+function ProductListComponent({ products }) {
     if (!products || products.length ===0) {
-        return (
-            <p className="product-list__empty">
-                No se encontraron productos para tu busqueda. 🔍
-            </p>
-        )
+        return <p className="product-list__empty"> No se encontraron productos. 🔍</p>
     }
 
     return (
         <section className="product-list">
             {products.map ((producto) => (
-                <CardComponent key={producto.id} product={producto} onAdd={onAdd} />
+               <ProductCardComponent key={producto.id} product={producto} />
             ))}
         </section>
     )
