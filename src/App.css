@@ -23,3 +23,12 @@
   color: var(--dg-texto-suave);
   font-weight: 600;
 }
+
+@media (max-width: 480px) {
+  .contenido { padding: 1rem 0.7rem 1.5rem; }
+  .contenido__head h1 { font-size: 1.25rem; }
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.8rem;
+  }
+}
