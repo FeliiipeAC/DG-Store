@@ -1,7 +1,7 @@
 import './ProductCardComponent.css';
 
 function formatearPrecio(valor) {
-  return valor.toLocalString('en-US', {style: 'currency', currency: 'USD'})  
+  return valor.toLocaleString('en-US', {style: 'currency', currency: 'USD'})  
 }
 
 function ProductCardComponent({ product }) {
