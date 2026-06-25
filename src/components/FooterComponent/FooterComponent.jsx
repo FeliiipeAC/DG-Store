@@ -3,7 +3,7 @@ import './FooterComponent.css'
 const COLUMNAS = [
    {
     titulo: 'tienda',
-    links: ['Notebooks', 'Componentes', 'Monitores', 'Gamer Zone']
+    links: ['Belleza', 'Perfume', 'Hogar']
    },
    {
     titulo:'Ayuda',
@@ -23,7 +23,7 @@ function FooterComponent() {
             <span className="footer__logo">
               <span className="footer__logo-dg">DG</span> Store
               </span>
-            <p>Tu tienda de tecnologia. Compra Online y retira en tienda</p>
+            <p>Tu tienda favorita. Compra Online y retira en tienda</p>
           </div>
 
           {COLUMNAS.map((col) => (
