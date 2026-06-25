@@ -1,6 +1,6 @@
 import './HeaderComponent.css'
 
-function HeaderComponent({ childen }) {
+function HeaderComponent({ children }) {
   return (
     <header className="header">
       <div className="header__top">
@@ -8,7 +8,7 @@ function HeaderComponent({ childen }) {
         <span className="logo__dg">DG</span>
         <span className="logo__store">Store</span>
         </a>
-        <div className="header__search"></div>
+        <div className="header__search">{children}</div>
       </div>
     </header>
   )
