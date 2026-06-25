@@ -1,5 +1,5 @@
 import ButtonComponent from '../ButtonComponent'
-import './ErrorMessageComponent'
+import './ErrorMessageComponent.css'
 
 function ErrorMessageComponent ({ mensaje = 'Algo salio mal.', onReintentar }) {
   return (
