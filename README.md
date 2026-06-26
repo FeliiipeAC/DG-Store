@@ -1,33 +1,37 @@
-# 🛒 DG Store
+# 🛒 DG Store API
 
-Tienda online de tecnología hecha con React. Muestra un catálogo de productos
-(notebooks, componentes, monitores, almacenamiento y periféricos) que se pueden
-**buscar**, **filtrar por categoría** y **agregar a un carrito de compras**.
+Tienda online hecha con React que **consume productos desde una API**
+(`https://dummyjson.com/products`). Muestra estados de **carga** y **error**, y permite
+**buscar productos por nombre**.
 
 ## 🧩 Componentes creados
 
 - HeaderComponent
 - HeroComponent
 - SearchBarComponent
-- CardComponent
+- ProductCardComponent
 - ProductListComponent
-- CartComponent
-- AccountMenuComponent
-- ButtonComponent
-- ImageComponent
+- LoaderComponent
+- ErrorMessageComponent
 - FooterComponent
+- ButtonComponent
+
+## 🌐 Consumo de API
+
+Los productos se obtienen con `fetch` dentro de `useEffect`, manejando 3 estados:
+**loading** (cargando), **error** (si falla la API) y **products** (los datos).
 
 ## ▶️ Cómo ejecutar el proyecto
 
-1. Instalar las dependencias:
-   ```
+1. Instalar dependencias:
+   
    npm install
-   ```
-2. Iniciar el servidor de desarrollo:
-   ```
+   
+2. Iniciar el servidor:
+   
    npm run dev
-   ```
-3. Abrir en el navegador la dirección que aparece (por ejemplo `http://localhost:5173`).
+   
+3. Abrir la dirección que aparece (por ejemplo `http://localhost:5173`).
 
 ## 🛠️ Tecnologías usadas
 
@@ -35,11 +39,18 @@ Tienda online de tecnología hecha con React. Muestra un catálogo de productos
 - Vite
 - JavaScript
 - CSS
+- API: dummyjson.com
 
 ## 📸 Capturas de pantalla
 
-### Vista general de DG Store
+### Vista general
+![Vista general](./src/capturas/main.png)
 
-![Vista general de la tienda](./src/capturas/vista-general.png)
+### Cargando productos (loading)
+![Cargando productos](./src/capturas/loading.png)
 
-![Buscador de productos](./src/capturas/vista-buscador.png)
+### Búsqueda funcionando
+![Buscador encontrando productos](./src/capturas/busqueda.png)
+
+### Error al cargar (sin conexión)
+![Error al cargar productos](./src/capturas/error.png)
